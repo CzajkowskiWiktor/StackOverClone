@@ -1,0 +1,475 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(-90deg,  rgb(228, 228, 228) 0%, #3d3d3d 100%, #d8e6d2 100%);
+    /* background: radial-gradient(circle, rgb(222, 228, 238) 13%, rgb(107, 183, 255) 65%); */
+}
+
+/* register and login section */
+.signup {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /* -webkit-box-pack: center;
+        -ms-flex-pack: center; */
+            justify-content: center;
+    /* -webkit-box-align: center;
+        -ms-flex-align: center; */
+            align-items: center;
+    height: 100vh;
+    width: 100%;
+    /* background: linear-gradient(-45deg, rgb(5, 19, 223) 0%, #f8f0f0 100%, #001eff 100%); */
+    overflow: hidden;
+  }
+
+  .signup .form__box {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+    width: 100%;
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 20px #1a1a1a;
+            box-shadow: 0 0 20px #1a1a1a;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    border-radius: 8px;
+  }
+
+  .signup .form__box form {
+    padding: 30px;
+    width: 400px;
+    font-size: 15px;
+  }
+
+  .signup .form__box h1 {
+    margin-bottom: 18px;
+    text-align: center;
+  }
+
+  .signup .form__box .form-box {
+  	padding: 0 10px;
+    margin-bottom: 10px;
+  }
+
+  .signup .form__box .form-box label {
+    display: inline-block;
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+
+  .signup .form__box .form-box input {
+    width: 100%;
+    padding: 5px;
+    font-size: 15px;
+    border: 1px solid #c5c5c5;
+    border-radius: 5px;
+  }
+
+  .signup .form__box .control-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+
+  .signup .form__box .send {
+    display: block;
+    padding: 10px 0;
+    margin-left: 1em;
+    margin-top: 10px;
+    width: 100px;
+    font-size: 16px;
+    background-color: rgb(0,30,255);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color .3s;
+  }
+
+  .signup .form__box .send:hover {
+      background-color: darkblue;
+  }
+  
+  /* soc main section */
+  
+  .entry_main h1 {
+  	text-align: center;
+  	font-size: 30px;
+  	color: dark;
+  }
+  
+  	a {
+		margin: 50px;
+		text-transform: uppercase;
+		background-color: rgb(0,30,255);
+		transition: background-color .5s;
+	}
+	a:link, a:visited {
+	  background-color: rgb(0,30,255);
+	  color: white;
+	  padding: 14px 25px;
+	  text-align: center;
+	  text-decoration: none;
+	  display: inline-block;
+	  border-radius: 10px;
+	}
+	
+	a:hover, a:active {
+	  background-color: darkblue;
+	}
+	
+	.entry_main-buttons {
+		display: flex;
+		flex-direction: row;
+	}
+	
+/* admin and user main page */
+
+.admin_main, .user_main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+
+.admin_main-title, .user_main-title {
+	font-size: 30px;
+	color: black;
+	margin-bottom: 30px;
+}
+
+.admin_main-title--username, .user_main-title--username {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 35px;
+	color:rgb(0,30,255);
+}
+
+.admin_main-buttons, .user_main-buttons {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.admin_main-buttons a, .user_main-buttons a {
+	display: block;
+	padding: 10px 20px;
+    margin-left: 20px;
+    margin-top: 10px;
+    width: 150px;
+    font-size: 18px;
+    background-color: rgb(0,30,255);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color .3s;
+}
+
+.admin_main-buttons a:hover, .user_main-buttons a:hover {
+	background-color: darkblue;
+}
+
+.search-container {
+	margin-bottom: 35px;
+}
+
+.search-container input {
+	padding: 6px;
+  	margin-top: 8px;
+  	font-size: 17px;
+  	border: none;
+}
+
+.search-container button {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background-color: #ddd;
+  font-size: 17px;
+  color: black;
+  border: none;
+  cursor: pointer;
+  transition: background-color .3s;
+}
+
+.search-container button:hover {
+	background-color: darkgrey;
+}
+
+/* add and delete question */
+
+.add_question, .delete_question {
+	background-color: white;
+	width: 500px;
+	border-radius: 10px;
+	box-shadow: 0 0 20px #1a1a1a;
+}
+
+.add_question-title, .delete_question-title {
+	margin-top: 20px;
+}
+
+.add_question__form, .delete_question__form {
+	padding: 30px;
+}
+
+.add_question__form-box label, .delete_question__form-box label {
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-bottom: 20px;
+    display: inline-block;
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+
+ .add_question__form-box input, .delete_question__form-box input {
+    width: 100%;
+    padding: 5px;
+    font-size: 15px;
+    border: 1px solid #c5c5c5;
+    border-radius: 5px;
+  }
+  
+   .add_question__form-box textarea {
+    width: 100%;
+    height: 130px;
+    padding: 5px;
+    font-size: 15px;
+    border: 1px solid #c5c5c5;
+    border-radius: 5px;
+  }
+  
+    .add_question__form-box--buttons, .delete_question__form-box--buttons {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .add_question__form-box--buttons .cancel, .add_question__form-box--buttons .submit,
+  .delete_question__form-box--buttons .submit, .delete_question__form-box--buttons .cancel {
+    display: block;
+    padding: 10px 0;
+    margin-left: 20px;
+    margin-top: 10px;
+    width: 100px;
+    font-size: 16px;
+    background-color: rgb(0,30,255);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color .5s;
+  }
+
+  .add_question__form-box--buttons .submit:hover, .add_question__form-box--buttons .cancel:hover,
+  .delete_question__form-box--buttons .submit:hover, .delete_question__form-box--buttons .cancel:hover {
+      background-color: darkblue;
+  }
+  
+  /* delete user */
+  
+  .delete_user {
+  	text-align: center;
+	background-color: white;
+	width: 400px;
+	border-radius: 10px;
+	box-shadow: 0 0 20px #1a1a1a;
+}
+
+.delete_user-title {
+	margin-top: 20px;
+	padding: 10px;
+}
+
+.delete_user__form {
+	padding: 20px;
+}
+
+.delete_user__form-box label {
+	text-transform: uppercase;
+	margin-bottom: 20px;
+    display: inline-block;
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+
+ .delete_user__form-box input {
+    width: 100%;
+    padding: 5px;
+    font-size: 15px;
+    border: 1px solid #c5c5c5;
+    border-radius: 5px;
+  }
+  
+   .delete_user__form-box--buttons {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .delete_user__form-box--buttons .cancel, .delete_user__form-box--buttons .delete {
+    display: block;
+    padding: 10px 0;
+    margin-left: 20px;
+    margin-top: 10px;
+    width: 100px;
+    font-size: 16px;
+    background-color: rgb(0,30,255);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color .5s;
+  }
+
+  .delete_user__form-box--buttons .delete:hover, .delete_user__form-box--buttons .cancel:hover {
+      background-color: darkblue;
+  }
+  
+  /* user deleted successfully */
+  .user_deleted-title {
+  	font-size: 30px;
+  	text-align: center;
+  	margin-bottom: 40px;
+  }
+  
+  .user_deleted-buttons {
+  	display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+  
+  .user_deleted-buttons .back, .user_deleted-buttons .button {
+  	text-align: center;
+    display: block;
+    padding: 10px 0;
+    margin-left: 20px;
+    margin-top: 10px;
+    width: 200px;
+    font-size: 16px;
+    background-color: rgb(0,30,255);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color .5s;
+  }
+
+  .user_deleted-buttons .back:hover, .user_deleted-buttons .button:hover {
+      background-color: darkblue;
+  }
+  
+  .user-deleted-failure {
+  	color: red;
+  	font-size: 40px;
+  }
+  
+  /* question successfully and fail added */
+  
+  .question_added-title {
+  	font-size: 30px;
+  	text-align: center;
+  	margin-bottom: 40px;
+  }
+  
+  .question_added-failure {
+  	color: red;
+  	font-size: 40px;
+  }
+  
+  .question_added_fail {
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  }
+
+ .question_added-failure-buttons .back {
+ 	text-align: center;
+    display: block;
+    padding: 10px 0;
+    margin-left: 20px;
+    margin-top: 10px;
+    width: 200px;
+    font-size: 16px;
+    background-color: rgb(0,30,255);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color .5s;
+ }
+ 
+ .question_added-failure-buttons .back:hover {
+  	background-color: darkblue;
+ }
+ 
+ /* delete answer and comment */
+ .delete_answer-title, .delete_comment-title {
+ 	font-size: 30px;
+  	text-align: center;
+  	margin-bottom: 40px;
+ }
+ 
+ .delete_answer__form-box--buttons, .delete_comment__form-box--buttons {
+ 	display: flex;
+ 	flex-direction: row;
+ }
+ 
+ .delete_answer__form-box--buttons .submit, .delete_answer__form-box--buttons .cancel,
+ .delete_comment__form-box--buttons .submit, .delete_comment__form-box--buttons .cancel {
+ 	text-align: center;
+    display: block;
+    padding: 10px 0;
+    margin-left: 20px;
+    margin-top: 10px;
+    width: 200px;
+    font-size: 16px;
+    background-color: rgb(0,30,255);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color .5s;
+ }
+
+.delete_answer__form-box--buttons .submit:hover, .delete_answer__form-box--buttons .cancel:hover,
+.delete_comment__form-box--buttons .submit:hover, .delete_comment__form-box--buttons .cancel:hover {
+	background-color: darkblue;
+}
+
+
+
+
+
